@@ -1,7 +1,7 @@
 {
   "name": "dark-blackboard-syntax",
   "theme": "syntax",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Atom syntax theme with a dark UI based on the blackboard theme.",
   "keywords": [
     "blackboard",
