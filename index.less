@@ -1,0 +1,146 @@
+@import "./styles/base.less";
+
+@background: rgba(0, 0, 0, 0.65);
+@dark-blue: #0C1021;
+@text-color: #E8E8E8;
+@keyword: #FBDE2D;
+@entity: #FF6400;
+@comment: #AEAEAE;
+
+atom-text-editor, atom-text-editor .gutter {
+    background-color: @background;
+    color: @text-color;
+}
+
+atom-text-editor.is-focused .cursor {
+    border-color: rgba(255, 255, 255, 0.65);
+}
+
+.selection .region {
+    background-color: lighten(@dark-blue, 35%);
+    color: darken(@text-color, 50%)
+}
+
+.is-focused .line-number.cursor-line-no-selection,
+.is-focused .line.cursor-line {
+    background-color: rgba(255, 255, 255, 0.06);
+}
+
+.comment, .raw {
+    color: @comment;
+}
+
+.constant {
+    color: #D8FA3C;
+}
+
+.entity {
+    color: @entity;
+}
+
+.keyword {
+    color: @keyword;
+}
+
+.storage {
+    color: @keyword;
+}
+
+.string, .meta.verbatim {
+    color: #61CE3C;
+}
+
+.support {
+    color: #8DA6CE;
+}
+
+.variable {
+    color: @text-color;
+}
+
+.invalid.deprecated {
+    font-style: italic;
+    color: #AB2A1D;
+}
+
+.invalid.illegal {
+    color: @text-color;
+    background-color: #9D1E15;
+}
+
+.entity.other.inherited-class {
+    font-style: italic;
+    color: @entity;
+}
+
+.string .constant.other.placeholder {
+    color: @entity;
+}
+
+.meta.function-call.py {
+    color: #BECDE6;
+}
+
+.meta.tag, .meta.tag .entity {
+    color: #7F90AA;
+}
+
+.entity.name.section {
+    color: #FFF;
+}
+
+.keyword.type.variant {
+    color: #D5E0F3;
+}
+
+.source.ocaml .keyword.operator.symbol {
+    color: @text-color;
+}
+
+.source.ocaml .keyword.operator.symbol.infix {
+    color: #8DA6CE;
+}
+
+.source.ocaml .keyword.operator.symbol.prefix {
+    color: #8DA6CE;
+}
+
+.source.ocaml .keyword.operator.symbol.infix.floating-point {
+    text-decoration: underline;
+}
+
+.source.ocaml .keyword.operator.symbol.prefix.floating-point {
+    text-decoration: underline;
+}
+
+.source.ocaml .constant.numeric.floating-point {
+    text-decoration: underline;
+}
+
+.text.tex.latex .meta.function.environment {
+    background-color: rgba(255, 255, 255, 0.03);
+}
+
+.text.tex.latex .meta.function.environment .meta.function.environment {
+    background-color: rgba(122, 150, 250, 0.03);
+}
+
+.text.tex.latex .support.function {
+    color: #FBDE2D;
+}
+
+.source.plist .string.unquoted, .source.plist .keyword.operator {
+    color: #FFF;
+}
+
+.heading {
+    color: #FFFC00;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.bold {
+    font-weight: bold;
+}
